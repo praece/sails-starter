@@ -38,8 +38,6 @@ module.exports = {
   constants: {
     AUTH_AUDIENCE: process.env.AUTH_AUDIENCE,
     AUTH_SECRET: process.env.AUTH_SECRET,
-    AUTH_TOKEN: process.env.AUTH_TOKEN,
-    AUTH_CONNECTION: process.env.AUTH_CONNECTION,
     ENVIRONMENT: process.env.ENVIRONMENT,
     BASE_PATH: process.env.BASE_PATH,
     TIMEZONE: process.env.TIMEZONE
