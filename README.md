@@ -1,6 +1,15 @@
 # Sails Starter App
 
 A starter sails app for Praece Consulting. Includes the following:
+
+## Installation
+1. clone git repo
+2. remove .git folder
+3. change git remote origin to the correct one for your project
+4. npm install
+5. knex migrate:latest
+
+## Features
 - Auth via jsonwebtoken
 - A user model and controller for use with auth
 - Custom blueprints that include count

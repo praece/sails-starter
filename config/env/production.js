@@ -40,6 +40,7 @@ module.exports = {
     AUTH_SECRET: process.env.AUTH_SECRET,
     ENVIRONMENT: process.env.ENVIRONMENT,
     BASE_PATH: process.env.BASE_PATH,
+    LOG_EMAIL: process.env.LOG_EMAIL,
     TIMEZONE: process.env.TIMEZONE
   }
 

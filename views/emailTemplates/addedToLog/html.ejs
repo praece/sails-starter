@@ -1,0 +1,40 @@
+<html>
+  <body>
+    <table>
+      <tr>
+        <% if (log.referenceModel) { %>
+          <td>
+            <strong>Model:</strong> <%=: log.referenceModel %>
+          </td>
+        <% } %>
+      </tr>
+      <tr>
+        <% if (log.referenceId) { %>
+          <td>
+            <strong>Id:</strong> <%= log.referenceId %>
+          </td>
+        <% } %>
+      </tr>
+    </table>
+
+    <table style="padding-top:15px;">
+      <tr>
+        <td>
+          <h3>Error:</h3>
+          <pre><%= log.log %></pre>
+        </td>
+      </tr>
+    </table>
+
+    <table style="padding-top:15px;">
+      <tr>
+        <td>
+          <h3>Stack Trace:</h3>
+          <pre><%= log.stackTrace %></pre>
+        </td>
+      </tr>
+    </table>
+
+    
+  </body>
+</html>
