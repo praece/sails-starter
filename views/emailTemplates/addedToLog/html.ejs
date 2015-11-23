@@ -26,14 +26,16 @@
       </tr>
     </table>
 
-    <table style="padding-top:15px;">
-      <tr>
-        <td>
-          <h3>Stack Trace:</h3>
-          <pre><%= log.stackTrace %></pre>
-        </td>
-      </tr>
-    </table>
+    <%if (log.stackTrace) { %>
+      <table style="padding-top:15px;">
+        <tr>
+          <td>
+            <h3>Stack Trace:</h3>
+            <pre><%= log.stackTrace %></pre>
+          </td>
+        </tr>
+      </table>
+    <% } %>
 
     
   </body>

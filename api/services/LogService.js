@@ -23,7 +23,7 @@ logger.prototype.log = function(type, log, model, id) {
 	};
 
 	sails.log.error(log, 'error');
-	sails.log.error(log.stack, 'stackTrace');
+	sails.log.error(log.stackTrace, 'stackTrace');
 
 	Log.create(log).then(_.noop);
 };

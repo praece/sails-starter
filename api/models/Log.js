@@ -12,7 +12,7 @@ var send      = Promise.promisify(sails.hooks.email.send);
 * @docs        :: http://sailsjs.org/#!documentation/models
 */
 
-function sendEmail() {
+function sendEmail(log) {
 	var tz = sails.config.constants.TIMEZONE;
 	log.humanCreatedAt = moment(log.createdAt).tz(tz).format('M/D/YY h:mmA');
 
