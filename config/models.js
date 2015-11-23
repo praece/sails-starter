@@ -84,7 +84,6 @@ module.exports.models = {
 
     return Promise
       .all([
-        TradeGeckoService.populate(records),
         BackReferenceService.populate(records, Model),
         CalculatedFieldsService.populate(records, Model)
       ])
